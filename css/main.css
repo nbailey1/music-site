@@ -1,0 +1,1495 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/*=======DOWNLOADED FONTS=========*/
+@font-face {
+    font-family: font-awesome;
+    src: url('../fonts/font-awesome.otf') format('opentype');
+}
+@font-face {
+  font-family: sansita-black-italic;
+  src: url('../fonts/sansita-black-italic.otf') format('opentype');
+}
+/*==END FONTS==*/
+
+/* COLORS =============================================
+Dark Pink (Magenta): #b21e49;
+Light Grey: #eeeeee;
+Bright Pink: #ff1256;
+Dark Grey: #222222;
+Blue: #23a4cc;
+==END COLORS============================================= */
+
+/*=========GLOBAL STYLES=============*/
+body,
+html {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  color: #222;
+  background-color: #eee;
+}
+
+a {
+  font-weight: bold;
+  color: #23a4cc;
+  text-decoration: none;
+}
+
+p {
+  font-size: 0.875em;
+  line-height: 1.4;
+  margin-bottom: 25px;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 1.4em;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 1em;
+  line-height: 1;
+}
+
+.btn {
+  background-color: #b21e49;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 2.5;
+  text-align: center;
+  box-shadow: 2px 2px 0px #DADADA;
+  height: 2.5em;
+  width: 100%;
+  display: block;
+}
+
+  .btn:hover {
+    background-color: #ff1256;
+  }
+
+input.btn {
+  background-color: #ff1256;
+}
+
+  input.btn:hover {
+    background-color: #b21e49
+  }
+
+.no-border {
+  border: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+/*==END GLOBAL STYLES==*/
+
+/*=========HEADER==========*/
+.main-header {
+  width: 100%;
+  margin: auto;
+  background-color: #ddd;
+}
+
+#logo {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #222;
+  text-align: center;
+}
+
+#logo img {
+  width: 78%;
+  margin: auto;
+  padding: 15px 35px;
+}
+
+nav {
+  width: 100%;
+  background-color: #ddd;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+  nav ul li {
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  nav ul li a {
+  color: #333;
+  text-transform: uppercase;
+  font-size:1em;
+  }
+
+  nav ul li a:hover {
+    color: #ff1256;
+  }
+
+  nav ul li a i {
+    padding-right: 10px;
+  }
+/*==END HEADER==*/
+
+/*===========MAIN CONTENT=============*/
+main {
+  padding: 15px 3% 5px 3%;
+  margin: auto;
+}
+
+.hero-area {
+  width: 100%;
+}
+/*==END MAIN CONTENT==*/
+
+/*======HOME PAGE & REVIEWS PAGE=========*/
+
+/*=========FEATURED NEWS ITEM========*/
+.top-story {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+
+.top-img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.top-info p {
+  margin-bottom: 15px;
+}
+/*==END FEATURED NEWS ITEM==*/
+
+/*=======SIDEBAR======*/
+.sidebar {
+  width: 100%;
+}
+
+.newsletter,
+.write-for-us {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+  .newsletter input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .newsletter input[type="text"] {
+    margin-bottom: 10px;
+    padding: 5px 0;
+  }
+
+.reviews .newsletter,
+.sidebar-upcoming,
+.sidebar-faq {
+  display: none;
+}
+
+.sidebar-upcoming i,
+.sidebar-faq i {
+  padding-right: 10px;
+}
+
+.write-for-us h2 {
+  font-size: 1em;
+}
+
+.write-for-us p {
+  font-size: 0.875em;
+  margin-bottom: 5px;
+}
+
+.detail .newsletter {
+  border-bottom: none;
+}
+/*==END SIDEBAR==*/
+
+/*=========FEED SECTION=========*/
+.feed {
+  width: 100%;
+}
+
+.feed h2 {
+  margin-bottom: 0;
+}
+
+.feed p {
+    display: none;
+  }
+
+.feed-item {
+  clear: both;
+  border-bottom: 1px solid #ccc;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+  .feed-item h2 {
+    margin: 0;
+  }
+
+  .feed-item h2 a {
+    color: #222;
+  }
+
+  .feed-item h2 a:hover {
+    color: #23a4cc;
+  }
+
+  .feed-item h3 {
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
+  .feed-item:nth-child(n+7) {
+    border-bottom: none;
+  }
+
+.feed-type {
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+.feed-img {
+  width: 45%;
+  float: left;
+  margin: 0;
+  margin-right: 20px;
+  border: 1px solid #ccc;
+}
+.feed-info {
+  width: 42%;
+  float: left;
+}
+/*==END FEED SECTION==*/
+
+/*==========FOOTER===========*/
+footer {
+  width: 100%;
+  margin: auto;
+  border-top: 1px solid #ccc;
+  background-color: #eee;
+  padding-top: 4.5%;
+}
+#footer-logo {
+  width: 47.5%;
+  margin: 0 auto;
+  background-color: #222;
+  text-align: center;
+}
+
+#footer-logo img {
+  width: 83%;
+  margin: auto;
+  padding: 15px;
+}
+/*==END FOOTER==*/
+
+/*==END HOME PAGE & REVIEWS PAGES==*/
+
+/*=========DETAILS PAGES=========*/
+.news-img,
+.reviews-img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.detailed-content div {
+  border-bottom: 1px solid #ccc;
+}
+
+ul.article-meta-info {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+  ul.article-meta-info li {
+    display: inline;
+    margin-bottom: 10px;
+  }
+
+  .article-author {
+    padding-right: 10px;
+    border-right: 1px solid;
+    margin-right: 10px;
+  }
+
+  #byline {
+    margin-top: 0;
+  }
+/*==END DETAILS PAGES==*/
+
+/*==ABOUT PAGE==*/
+.about-main {
+  margin: 35px 6% 135px 6%;
+  padding: 0;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info ul li {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1.125;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+.map-container {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.mission {
+  margin-top: 30px;
+}
+
+.team h1 {
+  margin-bottom: 30px;
+}
+
+.team-member {
+  margin: 20px 0;
+}
+
+.team-img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #333;
+  width: 40%;
+  padding-bottom: 40%;
+  float: left;
+  margin-right: 20px;
+  border: 1px solid #ccc;
+}
+
+.team-name {
+  font-size: 1.125em;
+}
+
+.team-name,
+.team-title {
+  margin: 5px 0;
+}
+
+.team-description {
+  display: none;
+}
+
+#team-img-jack {
+  background: url("../img/team-img-jack.jpg");
+}
+
+#team-img-lana {
+  background: url("../img/team-img-lana.jpg");
+}
+
+#team-img-willow {
+  background: url("../img/team-img-willow.jpg");
+}
+
+#team-img-jack,
+#team-img-lana,
+#team-img-willow {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #333;
+}
+/*==END ABOUT PAGE==*/
+
+/*==CONCERTS PAGE==*/
+.concerts-main {
+  width: 100%;
+  /*==0.75em=12px==*/
+  padding-bottom: 120px;
+}
+
+.concerts-feed {
+  width: 100%;
+  font-size: 0.75em;
+}
+
+.concerts-main .concerts-feed h2 {
+  font-size: 1.75em;
+  margin: auto;
+}
+
+.concerts-main .concerts-feed .feed-item {
+  padding-top: 0;
+  padding-bottom: 10px;
+  margin-top: 30px;
+}
+
+.concerts-main .concerts-feed .left-column .feed-item:first-of-type {
+  margin-top: 20px;
+}
+
+.concert-date-icon {
+  width: 16.5%;
+  float: left;
+  border: 1px solid #ccc;
+  margin: 0;
+}
+
+.concert-date-meta-info {
+  list-style: none;
+  padding: 11px 5px;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  line-height: 0.8;
+}
+
+.concert-month {
+  font-size: 1.4em;
+}
+
+.concert-day {
+  font-size: 1.8em;
+}
+
+.concerts-main .concerts-feed .feed-info {
+  width: 62.5%;
+  float: left;
+  margin-left: 10px;
+}
+
+.concert-artist {
+  font-size: 1.3em;
+  margin: 0;
+}
+
+.concert-meta-info {
+  font-size: 1.17em;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  line-height: 1.1;
+}
+
+.concerts-main .concerts-feed .right-column .feed-item:first-child {
+  border-bottom: none;
+}
+
+.concerts-main .concerts-feed  .right-column .feed-item:nth-of-type(n+2) {
+  display: none;
+}
+
+.concerts-main .sidebar {
+  display: none;
+}
+/*==END CONCERTS PAGE==*/
+
+/*==MOBILE FAQ PAGE==*/
+.faq-main {
+  font-size: 0.875em;
+  padding-bottom: 120px;
+}
+
+.faq-main h2 {
+  font-size: 1.5em;
+}
+
+.faq-main h4 {
+  font-size: 1.14em;
+  font-weight: normal;
+}
+
+.faq-question {
+  border-bottom: 1px solid #ccc;
+}
+
+.faq-question:last-of-type {
+  border-bottom: none;
+}
+/*==END MOBILE FAQ PAGE==*/
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+  Media Queries for Responsive Design
+   ========================================================================== */
+
+/*===TABLET DESIGNS===*/
+@media (min-width:768px) {
+
+  /*==GLOBAL STYLES==*/
+  h1 {
+    font-size: 1.5em;
+  }
+
+  /* HEADER================*/
+  .main-header {
+    padding: 0 2.5%;;
+    height: 100px;
+  }
+
+  #logo {
+    width: 40%;
+    height: 100%;
+    float: left;
+    position: relative;
+  }
+
+  #logo img {
+    width: 82%;
+    padding: 0;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  nav {
+    width: 56%;
+    float: right;
+  }
+
+  nav ul {
+    margin: 0;
+    float: right;
+  }
+  nav ul li {
+    display: inline;
+    padding-left: 20px;
+    border: none;
+    position: relative;
+    top: 35px;
+  }
+  /*==END HEADER==*/
+
+  /*==MAIN==*/
+  main {
+    padding: 0 2.5%;;
+  }
+  /*==END MAIN==*/
+
+  /*FEATURED NEWS ITEM==========*/
+  .top-story {
+    width: 100%;
+    padding: 30px 0;
+  }
+  .top-img {
+    width: 57%;
+    float: left;
+    border: 1px solid #222;
+    margin-right: 30px;
+  }
+  .top-info {
+    width: 32.5%;
+    float: left;
+  }
+
+  .top-info h1 {
+    margin: 0;
+    line-height: 0.92;
+    margin-bottom: 20px;
+  }
+  /*==END FEATURED NEWS ITEM*==/
+
+  /*SIDE BAR=============*/
+  .sidebar {
+    clear: both;
+    width: 37%;
+    float: right;
+  }
+
+  .sidebar h2 {
+    margin-top: 20px;
+  }
+
+  .sidebar p {
+    margin: 15px 0;
+  }
+
+  .sidebar-upcoming,
+  .sidebar-faq {
+    display: block;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+  }
+
+  .sidebar-upcoming i,
+  .sidebar-faq i {
+    display: none;
+  }
+
+  .newsletter,
+  .sidebar-upcoming,
+  .sidebar-faq,
+  .write-for-us {
+    margin-left: -8%;
+    padding-left: 15px;
+  }
+
+  .reviews .newsletter {
+    display: inherit;
+  }
+
+  .write-for-us {
+    display: none;
+  }
+  /*==END SIDEBAR==*/
+
+  /*NEWS/REVIEWS FEED===========*/
+  .feed {
+    width: 60%;
+    float: left;
+    border-right: 1px solid #ccc;
+    margin-bottom: 150px;
+    margin-right: 15px;
+  }
+
+  .feed h2 {
+    padding-bottom: 5px;
+  }
+
+  .feed-img {
+    width: 35%;
+    margin-right: 30px;
+  }
+
+  .feed-info {
+    width: 57%;
+  }
+
+  .feed-info h2 {
+    font-size: 1.125em;
+    line-height: 1.1;
+    margin-right: 25px;
+  }
+  /*==END NEWS/REVIEWS FEED==*/
+
+  /*FOOTER======================*/
+  footer {
+    width: 100%;
+    clear: both;
+  }
+
+  #footer-logo {
+    width: 30%;
+    margin: auto;
+  }
+  /*==END FOOTER==*/
+
+  /*DETAILED PAGES=================*/
+
+.detailed-content {
+  padding-top: 15px;
+  clear: both;
+}
+
+.detailed-content div {
+  clear: both;
+  padding-top: 25px;
+}
+
+.detailed-content div p {
+  font-size: 0.875em;
+  line-height: 1.7;
+}
+
+  .reviews-img,
+  .news-img {
+    width: 44%;
+    margin: 0;
+    float: left;
+    margin-right: 3%;
+  }
+
+  .detail-title {
+    width: 47%;
+    float: left;
+  }
+
+  .article-meta-info {
+    font-size: 0.875em;
+    line-height: 1.3;
+  }
+
+  #byline {
+    margin-top: 25px;
+    font-size: 1em;
+    line-height: 1.25;
+  }
+
+  .detail {
+    width: 100%;
+  }
+
+    .detail .newsletter {
+      border: none;
+    }
+
+    .detail .newsletter input {
+      display: inline;
+      width: 70%;
+    }
+
+    .detail .newsletter .btn {
+      width: 25%;
+    }
+
+    .detail .newsletter input[type="text"] {
+      padding: 7px 0;
+      margin-right: 2%;
+    }
+
+    .detail .newsletter {
+      margin-left: 0;
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 480px;
+      padding-left: 0;
+    }
+
+  /*==END DETAILED PAGES==*/
+
+  /*==ABOUT PAGE==*/
+  .about-main {
+    margin: 0 3%;
+  }
+
+  .contact-info {
+    width: 37%;
+    float: left;
+    margin-top: 60px;
+  }
+
+  .contact-info h1 {
+    font-size: 1.5em;
+    line-height: 0.75;
+  }
+
+  .contact-info ul {
+    margin: 30px 0;
+  }
+
+  .map-container {
+    padding-bottom: 45%;
+    width: 58%;
+    float: right;
+    border: 1px solid #333;
+    margin: 50px 0 40px 0;
+    }
+
+  .mission {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 25px;
+    clear: both;
+  }
+
+  .mission h1 {
+    margin-top: 30px;
+    line-height: 0.75;
+  }
+
+  .mission p {
+    font-size: 0.875em;
+    line-height: 1.6;
+    margin: 30px 0;
+  }
+
+  .team {
+    padding-top: 15px;
+    padding-bottom: 240px;
+  }
+
+  .team-img {
+    width: 15%;
+    padding-bottom: 15%;
+    margin-right: 55px;
+  }
+
+  .team-title {
+    font-size: 1em;
+    line-height: 1.125;
+  }
+  /*==END ABOUT PAGE==*/
+
+  /*==TABLET CONCERTS PAGE==*/
+  .concerts-main .concerts-feed  h2 {
+    margin-top: 30px;
+  }
+
+  .concerts-main .concerts-feed  .left-column {
+    float: left;
+    width: 39%;
+  }
+
+  .concerts-main .concerts-feed  .left-column .feed-item:first-of-type {
+    margin-top: 30px;
+  }
+
+  .concerts-main .concerts-feed  .left-column .feed-item:last-of-type {
+    border-bottom: none;
+  }
+
+  .concerts-main .concerts-feed  .right-column {
+    float: right;
+    width: 39%;
+    margin-bottom: 700px;
+  }
+
+  .concerts-main .concerts-feed  .right-column .feed-item:first-of-type {
+    border-bottom: 1px solid #ccc;
+  }
+
+  .concerts-main .concerts-feed  .right-column .feed-item:nth-of-type(n+2) {
+    display: inherit;
+  }
+
+  .concerts-main .concerts-feed  .right-column .feed-item:last-of-type {
+    border-bottom: none;
+  }
+
+  .concert-date-icon {
+    width: 21%;
+  }
+
+  .concert-date-meta-info {
+    line-height: 0.75;
+  }
+
+  .concert-month {
+    font-size: 1.8em;
+  }
+
+  .concert-day {
+    font-size: 2.85em;
+  }
+
+  .concert-artist {
+    font-size: 1.5em;
+  }
+
+  .concert-meta-info {
+    font-size: 1.3em;
+  }
+  /*==END TABLET CONCERTS PAGE==*/
+
+  /*==TABLET FAQ PAGE==*/
+  .faq-main {
+    margin-top: 50px;
+    padding-bottom: 400px;
+  }
+
+  .faq-main h2 {
+    font-size: 1.7em;
+  }
+
+  .faq-question h4 {
+    font-size: 1.28em;
+  }
+
+  .faq-question p {
+    margin-bottom: 30px;
+  }
+  /*==END TABLET FAQ PAGE==*/
+}
+/*==END TABLET DESIGNS==*/
+
+/*==DESKTOP DESIGNS==*/
+@media (min-width:940px) {
+
+  /*==GLOBAL STYLES==*/
+  .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+  width: 100%;
+  }
+
+  h1 {
+    font-size: 2.25em;
+  }
+
+  h2 {
+    font-size: 1.875em;
+  }
+
+  p {
+    font-size: 1em;
+    line-height: 1.25;
+  }
+  /*==END GLOBAL STYLES==*/
+
+  /*=========HEADER==========*/
+  .main-header {
+    width: 95%;
+  }
+
+  #logo {
+    width: 35%;
+  }
+
+  nav {
+    width: 60%;
+  }
+
+  nav ul li {
+    top: 28px;
+  }
+  /*==END HEADER==*/
+
+  /*=======MAIN CONTENT========*/
+
+  main {
+    margin-top: 20px;
+    width: 95%;
+  }
+  /*==END MAIN CONTENT==*/
+
+  /*FEATURED NEWS ITEM==========*/
+  .top-story {
+    width: 65%;
+    float: left;
+    border: none;
+    border-right: 1px solid #ccc;
+    padding: 10px 3% 15px 0;
+  }
+
+  .top-img {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  .top-info {
+    width: 100%;
+    float: none;
+  }
+  /*==END FEATURED NEWS ITEM==*/
+
+  /*SIDE BAR=============*/
+  .sidebar {
+    clear: none;
+    width: 30%;
+    float: right;
+  }
+
+  .sidebar-faq {
+    border: none;
+  }
+
+  .sidebar h2 {
+    margin-bottom: 15px;
+  }
+
+  .sidebar i {
+    display: inline;
+  }
+
+  .newsletter,
+  .sidebar-upcoming,
+  .sidebar-faq {
+    padding-left: 6.5%;
+    margin-left: -6.5%;
+  }
+  /*==END SIDEBAR==*/
+
+  /*NEWS/REVIEWS FEED===========*/
+  .feed {
+    width: 100%;
+    float: none;
+    clear: both;
+    padding-top: 30px;
+    border-top: 1px solid #ccc;
+    border-right: none;
+    margin-bottom: 30px;
+  }
+
+    .feed p {
+      display: block;
+      margin: 0;
+    }
+
+    .feed h2 {
+      margin: 0;
+      font-size: 1.3125em;
+      line-height: 1.25;
+    }
+
+  .feed-type {
+    font-size: 0.75em;
+  }
+
+  .feed-img {
+    width: 20%;
+  }
+
+  .feed-info {
+    width: 68%;
+  }
+  /*==END NEWS/REVIEWS FEED==*/
+
+  /*FOOTER======================*/
+
+    footer {
+      width: 100%;
+      padding-top: 3%;
+    }
+
+    #footer-logo {
+      width: 20%;
+    }
+  /*==END FOOTER==*/
+
+  /*==DETAILED PAGES=================*/
+  .detail-main {
+    margin-top: 55px;
+  }
+
+  article.detailed-content {
+    width: 65%;
+    float: left;
+    padding-right: 2.5%;
+    padding-top: 0;
+    border-right: 1px solid #ccc;
+    margin-bottom: 600px;
+  }
+
+  .reviews-img,
+  .news-img {
+    width: 100%;
+    float: none;
+  }
+
+  .reviews-img img,
+  .news-img img {
+    max-width: 620px;
+  }
+
+  .detail-title {
+    width: 100%;
+    float: none;
+  }
+
+  .article-meta-info {
+    font-size: 1em;
+    line-height: 1.125;
+  }
+
+  #byline {
+    font-size: 1.125em;
+    line-height: 1.5;
+  }
+
+  .detailed-content div {
+    padding-top: 0;
+    border-bottom: none;
+  }
+
+  .detailed-content div p {
+    font-size: 1em;
+    line-height: 1.375;
+  }
+
+  .detail {
+    width: 30%;
+    float: left;
+  }
+
+  .detail .newsletter {
+    padding-bottom: 10px;
+    padding-left: 6.25%;
+  }
+
+  .detail .newsletter h2 {
+    margin-top: 0;
+  }
+
+    .detail .newsletter input {
+      display: block;
+      width: 100%;
+    }
+
+    .detail .newsletter .btn {
+      width: 100%
+    }
+
+    aside.detail .newsletter input[type="text"] {
+      margin-right: 0;
+    }
+    /*==END DETAILED PAGES==*/
+
+    /*==ABOUT PAGE==*/
+    .about-main h1 {
+      font-size: 1.875em;
+      line-height: 0.6;
+    }
+
+    .contact-info {
+      width: 39%;
+    }
+
+    .contact-info h1 {
+      font-size: 1.875em;
+      line-height: 0.6;
+    }
+
+    .contact-info ul li {
+      font-size: 1.3125em;
+      line-height: 0.85;
+    }
+
+    .map-container{
+      border: 1px solid #ccc;
+      width: 44%;
+      padding-bottom: 33%;
+      margin: 65px 130px 55px 0;
+    }
+
+    .mission {
+      padding-bottom: 15px;
+    }
+
+    .mission h1 {
+      margin-top: 35px;
+    }
+
+    .mission p {
+      font-size: 1em;
+      line-height: 1.375;
+    }
+
+    .team {
+      padding-bottom: 400px;
+    }
+
+    .team-member {
+      margin: 30px 0;
+    }
+
+    .team-name {
+      font-size: 1.3125em;
+      margin: 0;
+    }
+
+    .team-title {
+      margin: 0 0 30px 0;
+    }
+
+    .team-img {
+      width: 19%;
+      padding-bottom: 19%;
+      margin-right: 35px;
+    }
+
+    .team-description {
+      display: inline;
+      margin-top: 25px;
+    }
+    /*==END ABOUT PAGE==*/
+
+    /*==DESKTOP CONCERTS PAGE==*/
+    .concerts-feed {
+      width: 64%;
+      float: left;
+      border-right: 1px solid #ccc;
+      padding-right: 3%;
+      padding-bottom: 100px;
+      margin-bottom: 1000px;
+    }
+
+    .concerts-main .concerts-feed .left-column,
+    .concerts-main .concerts-feed .right-column {
+      width: 46%;
+    }
+
+    .concerts-main .concerts-feed .right-column {
+      margin-bottom: auto;
+    }
+
+    .concert-date-icon {
+      width: 22%;
+    }
+
+    .concerts-main .sidebar {
+      display: inline;
+      width: 31%;
+    }
+
+    .concerts-main .sidebar .newsletter form {
+      font-size: 1.125em;
+    }
+
+    /*==END DESKTOP CONCERTS PAGE==*/
+}
+/*==END DESKTOP DESIGNS===*/
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
