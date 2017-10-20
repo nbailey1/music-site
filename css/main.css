@@ -120,6 +120,7 @@ html {
   font-size: 16px;
   color: #222;
   background-color: #eee;
+  overflow-x: hidden;
 }
 
 a {
